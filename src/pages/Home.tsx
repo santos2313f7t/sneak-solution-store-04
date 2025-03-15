@@ -10,6 +10,12 @@ const Home = () => {
       <section className="relative pt-40 pb-24 overflow-hidden">
         <div className="container mx-auto">
           <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
+            {/* Logo */}
+            <img 
+              src="/lovable-uploads/ce8bcb67-33f1-41de-b9a9-3a36f914316b.png" 
+              alt="SneaKSolutions Logo" 
+              className="h-24 w-auto mb-8 animate-fade-in" 
+            />
             <div className="px-4 py-1 bg-secondary rounded-full mb-6 animate-fade-down">
               <span className="text-xs font-medium text-foreground">Solução 100% Indetectável</span>
             </div>
