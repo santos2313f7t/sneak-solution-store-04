@@ -38,12 +38,19 @@ const Header = () => {
       <div className="container flex justify-between items-center">
         <Link 
           to="/" 
-          className="text-2xl font-bold tracking-tight"
+          className="flex items-center gap-2 text-2xl font-bold tracking-tight"
           onClick={closeMenu}
         >
-          <span className="mr-1">Snea</span>
-          <span className="text-muted-foreground">K</span>
-          <span>Solutions</span>
+          <img 
+            src="/lovable-uploads/ce8bcb67-33f1-41de-b9a9-3a36f914316b.png" 
+            alt="SneaKSolutions Logo" 
+            className="h-10 w-auto" 
+          />
+          <div>
+            <span className="mr-1">Snea</span>
+            <span className="text-muted-foreground">K</span>
+            <span>Solutions</span>
+          </div>
         </Link>
 
         {/* Desktop Navigation */}

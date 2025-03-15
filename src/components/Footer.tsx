@@ -9,10 +9,17 @@ const Footer = () => {
       <div className="container py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <Link to="/" className="text-xl font-bold tracking-tight inline-block">
-              <span className="mr-1">Snea</span>
-              <span className="text-muted-foreground">K</span>
-              <span>Solutions</span>
+            <Link to="/" className="flex items-center gap-2 text-xl font-bold tracking-tight inline-block mb-2">
+              <img 
+                src="/lovable-uploads/ce8bcb67-33f1-41de-b9a9-3a36f914316b.png" 
+                alt="SneaKSolutions Logo" 
+                className="h-8 w-auto" 
+              />
+              <div>
+                <span className="mr-1">Snea</span>
+                <span className="text-muted-foreground">K</span>
+                <span>Solutions</span>
+              </div>
             </Link>
             <p className="text-muted-foreground text-sm">
               Fornecendo soluções premium de bypass indetectável com recursos de cheat externo.
