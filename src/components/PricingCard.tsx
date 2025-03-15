@@ -21,7 +21,7 @@ const PricingCard = ({
   features,
   highlighted = false,
   ctaText = "Começar Agora",
-  ctaLink = "#",
+  ctaLink = "https://discord.gg/THqM2gAe",
 }: PricingCardProps) => {
   return (
     <div 
@@ -53,8 +53,10 @@ const PricingCard = ({
         ))}
       </ul>
       
-      <Link
-        to={ctaLink}
+      <a
+        href={ctaLink}
+        target="_blank"
+        rel="noopener noreferrer"
         className={`w-full block text-center rounded-md py-2.5 font-medium transition-colors focus-ring ${
           highlighted
             ? "bg-primary text-primary-foreground hover:bg-primary/90"
@@ -62,7 +64,7 @@ const PricingCard = ({
         }`}
       >
         {ctaText}
-      </Link>
+      </a>
     </div>
   );
 };
