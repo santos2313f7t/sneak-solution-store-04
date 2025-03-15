@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Discord } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -16,7 +16,7 @@ const Contact = () => {
 
           <div className="bg-secondary/40 rounded-xl p-8 border border-border">
             <div className="text-center mb-8">
-              <Discord className="mx-auto h-16 w-16 mb-4 text-[#5865F2]" />
+              <MessageSquare className="mx-auto h-16 w-16 mb-4 text-[#5865F2]" />
               <h2 className="text-xl font-semibold mb-2">Comunidade Discord</h2>
               <p className="text-muted-foreground text-sm">
                 Junte-se à nossa comunidade no Discord para atualizações em tempo real, suporte dedicado e bate-papo com outros usuários.
@@ -30,7 +30,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="w-full bg-[#5865F2] hover:bg-[#4752C4] text-white py-3 rounded-md font-medium flex items-center justify-center gap-2 transition-colors focus-ring"
               >
-                <Discord className="h-5 w-5" />
+                <MessageSquare className="h-5 w-5" />
                 Entrar com Discord
               </a>
               
