@@ -1,0 +1,284 @@
+
+import { useState } from "react";
+import FeedbackCard from "../components/FeedbackCard";
+
+const Feedback = () => {
+  const [filter, setFilter] = useState("all");
+  
+  const feedbacks = [
+    {
+      id: 1,
+      name: "Ricardo M.",
+      date: "June 15, 2023",
+      rating: 5,
+      comment: "Absolutamente incrível! Estou usando há 2 meses e continua completamente indetectável. O cheat externo é muito superior aos outros que já testei.",
+      category: "bypass",
+    },
+    {
+      id: 2,
+      name: "Gabriel S.",
+      date: "June 18, 2023",
+      rating: 5,
+      comment: "O melhor investimento que fiz. O bypass funciona perfeitamente e o cheat externo tem todas as funcionalidades que eu precisava. Suporte ao cliente excelente também.",
+      category: "external",
+    },
+    {
+      id: 3,
+      name: "Lucas F.",
+      date: "June 20, 2023",
+      rating: 5,
+      comment: "Comprei o plano lifetime e não me arrependo. A qualidade do produto é excepcional e as atualizações são regulares. 100% indetectável como prometido.",
+      category: "bypass",
+    },
+    {
+      id: 4,
+      name: "Diego R.",
+      date: "June 22, 2023",
+      rating: 4,
+      comment: "O cheat externo é muito bom, especialmente as funções de ESP. Uso diariamente sem problemas de detecção. Recomendo fortemente.",
+      category: "external",
+    },
+    {
+      id: 5,
+      name: "Marcelo T.",
+      date: "June 25, 2023",
+      rating: 5,
+      comment: "Finalmente um bypass que realmente funciona! Já tentei vários outros e sempre acabava banido. Com o SneaKSolutions, jogo tranquilo há semanas.",
+      category: "bypass",
+    },
+    {
+      id: 6,
+      name: "Felipe A.",
+      date: "June 27, 2023",
+      rating: 5,
+      comment: "A combinação do bypass com o cheat externo é imbatível. Interface muito fácil de usar e o desempenho é excelente, sem impacto no FPS.",
+      category: "both",
+    },
+    {
+      id: 7,
+      name: "Bruno L.",
+      date: "June 28, 2023",
+      rating: 5,
+      comment: "Serviço de primeira qualidade. O suporte técnico respondeu todas as minhas dúvidas rapidamente e o produto funciona exatamente como anunciado.",
+      category: "support",
+    },
+    {
+      id: 8,
+      name: "Thiago M.",
+      date: "June 30, 2023",
+      rating: 4,
+      comment: "As funcionalidades do cheat externo são muito completas e fáceis de configurar. O bypass continua funcionando perfeitamente mesmo após as atualizações do jogo.",
+      category: "both",
+    },
+    {
+      id: 9,
+      name: "João V.",
+      date: "June 10, 2023",
+      rating: 5,
+      comment: "Melhor investimento que fiz para jogos. O bypass é realmente indetectável e o cheat externo tem recursos que nem imaginava que existiam.",
+      category: "both",
+    },
+  ];
+
+  const filteredFeedbacks = filter === "all" 
+    ? feedbacks 
+    : feedbacks.filter(fb => fb.category === filter);
+
+  return (
+    <>
+      {/* Hero Section */}
+      <section className="pt-40 pb-16">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto">
+            <h1 className="heading-xl mb-6 animate-fade-down">Customer Feedback</h1>
+            <p className="text-muted-foreground text-lg mb-8 animate-fade-down" style={{ animationDelay: "100ms" }}>
+              See what our customers are saying about SneaKSolutions bypass and external cheat.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Feedback Filter */}
+      <section className="py-8">
+        <div className="container">
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
+            <button 
+              onClick={() => setFilter("all")}
+              className={`px-4 py-2 rounded-md text-sm font-medium transition-colors focus-ring ${
+                filter === "all" 
+                  ? "bg-primary text-primary-foreground" 
+                  : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+              }`}
+            >
+              All Feedback
+            </button>
+            <button 
+              onClick={() => setFilter("bypass")}
+              className={`px-4 py-2 rounded-md text-sm font-medium transition-colors focus-ring ${
+                filter === "bypass" 
+                  ? "bg-primary text-primary-foreground" 
+                  : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+              }`}
+            >
+              Bypass
+            </button>
+            <button 
+              onClick={() => setFilter("external")}
+              className={`px-4 py-2 rounded-md text-sm font-medium transition-colors focus-ring ${
+                filter === "external" 
+                  ? "bg-primary text-primary-foreground" 
+                  : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+              }`}
+            >
+              External Cheat
+            </button>
+            <button 
+              onClick={() => setFilter("both")}
+              className={`px-4 py-2 rounded-md text-sm font-medium transition-colors focus-ring ${
+                filter === "both" 
+                  ? "bg-primary text-primary-foreground" 
+                  : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+              }`}
+            >
+              Both
+            </button>
+            <button 
+              onClick={() => setFilter("support")}
+              className={`px-4 py-2 rounded-md text-sm font-medium transition-colors focus-ring ${
+                filter === "support" 
+                  ? "bg-primary text-primary-foreground" 
+                  : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+              }`}
+            >
+              Support
+            </button>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredFeedbacks.map((feedback) => (
+              <FeedbackCard
+                key={feedback.id}
+                name={feedback.name}
+                date={feedback.date}
+                rating={feedback.rating}
+                comment={feedback.comment}
+              />
+            ))}
+          </div>
+
+          {filteredFeedbacks.length === 0 && (
+            <div className="text-center py-12">
+              <p className="text-muted-foreground">No feedback found for this category.</p>
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-16 bg-secondary">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <h2 className="heading-lg mb-4">Customer Satisfaction</h2>
+            <p className="text-muted-foreground">
+              Our customers love our products, and the numbers speak for themselves.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="text-4xl font-bold mb-2">98%</div>
+              <p className="text-sm text-muted-foreground">Customer Satisfaction</p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold mb-2">0%</div>
+              <p className="text-sm text-muted-foreground">Detection Rate</p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold mb-2">1000+</div>
+              <p className="text-sm text-muted-foreground">Active Users</p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold mb-2">24/7</div>
+              <p className="text-sm text-muted-foreground">Customer Support</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Submit Feedback */}
+      <section className="py-16">
+        <div className="container">
+          <div className="max-w-2xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="heading-md mb-4">Share Your Experience</h2>
+              <p className="text-muted-foreground">
+                We value your feedback. Let us know about your experience with our products.
+              </p>
+            </div>
+
+            <div className="bg-card border border-border rounded-xl p-8">
+              <form className="space-y-6">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium mb-2">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    className="w-full px-4 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:border-input bg-background"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium mb-2">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    className="w-full px-4 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:border-input bg-background"
+                    placeholder="Your email"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="rating" className="block text-sm font-medium mb-2">
+                    Rating
+                  </label>
+                  <select
+                    id="rating"
+                    className="w-full px-4 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:border-input bg-background"
+                  >
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                  </select>
+                </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium mb-2">
+                    Your Feedback
+                  </label>
+                  <textarea
+                    id="message"
+                    rows={5}
+                    className="w-full px-4 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:border-input bg-background resize-none"
+                    placeholder="Share your experience with our products..."
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-md font-medium transition-colors focus-ring"
+                >
+                  Submit Feedback
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default Feedback;
