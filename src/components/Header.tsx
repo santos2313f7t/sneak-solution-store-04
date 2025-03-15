@@ -23,9 +23,9 @@ const Header = () => {
   const isActive = (path: string) => location.pathname === path;
 
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "Features", path: "/features" },
-    { name: "Pricing", path: "/pricing" },
+    { name: "Início", path: "/" },
+    { name: "Recursos", path: "/features" },
+    { name: "Preços", path: "/pricing" },
     { name: "Feedback", path: "/feedback" },
   ];
 
@@ -65,7 +65,7 @@ const Header = () => {
             to="/contact"
             className="bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-md text-sm font-medium transition-colors focus-ring"
           >
-            Contact
+            Contato
           </Link>
         </nav>
 
@@ -73,7 +73,7 @@ const Header = () => {
         <button 
           onClick={toggleMenu}
           className="md:hidden focus:outline-none focus-ring rounded-md p-1"
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
         >
           {isMenuOpen ? (
             <X className="h-6 w-6" />
@@ -106,7 +106,7 @@ const Header = () => {
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-md text-sm font-medium transition-colors focus-ring w-full text-center mt-2"
               onClick={closeMenu}
             >
-              Contact
+              Contato
             </Link>
           </nav>
         </div>

@@ -20,7 +20,7 @@ const PricingCard = ({
   description,
   features,
   highlighted = false,
-  ctaText = "Get Started",
+  ctaText = "Começar Agora",
   ctaLink = "#",
 }: PricingCardProps) => {
   return (
@@ -33,7 +33,7 @@ const PricingCard = ({
     >
       {highlighted && (
         <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-primary-foreground rounded-full text-xs font-medium">
-          Most Popular
+          Mais Popular
         </div>
       )}
 

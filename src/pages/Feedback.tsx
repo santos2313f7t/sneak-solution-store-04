@@ -9,7 +9,7 @@ const Feedback = () => {
     {
       id: 1,
       name: "Ricardo M.",
-      date: "June 15, 2023",
+      date: "15 de junho, 2023",
       rating: 5,
       comment: "Absolutamente incrível! Estou usando há 2 meses e continua completamente indetectável. O cheat externo é muito superior aos outros que já testei.",
       category: "bypass",
@@ -17,7 +17,7 @@ const Feedback = () => {
     {
       id: 2,
       name: "Gabriel S.",
-      date: "June 18, 2023",
+      date: "18 de junho, 2023",
       rating: 5,
       comment: "O melhor investimento que fiz. O bypass funciona perfeitamente e o cheat externo tem todas as funcionalidades que eu precisava. Suporte ao cliente excelente também.",
       category: "external",
@@ -25,7 +25,7 @@ const Feedback = () => {
     {
       id: 3,
       name: "Lucas F.",
-      date: "June 20, 2023",
+      date: "20 de junho, 2023",
       rating: 5,
       comment: "Comprei o plano lifetime e não me arrependo. A qualidade do produto é excepcional e as atualizações são regulares. 100% indetectável como prometido.",
       category: "bypass",
@@ -33,7 +33,7 @@ const Feedback = () => {
     {
       id: 4,
       name: "Diego R.",
-      date: "June 22, 2023",
+      date: "22 de junho, 2023",
       rating: 4,
       comment: "O cheat externo é muito bom, especialmente as funções de ESP. Uso diariamente sem problemas de detecção. Recomendo fortemente.",
       category: "external",
@@ -41,7 +41,7 @@ const Feedback = () => {
     {
       id: 5,
       name: "Marcelo T.",
-      date: "June 25, 2023",
+      date: "25 de junho, 2023",
       rating: 5,
       comment: "Finalmente um bypass que realmente funciona! Já tentei vários outros e sempre acabava banido. Com o SneaKSolutions, jogo tranquilo há semanas.",
       category: "bypass",
@@ -49,7 +49,7 @@ const Feedback = () => {
     {
       id: 6,
       name: "Felipe A.",
-      date: "June 27, 2023",
+      date: "27 de junho, 2023",
       rating: 5,
       comment: "A combinação do bypass com o cheat externo é imbatível. Interface muito fácil de usar e o desempenho é excelente, sem impacto no FPS.",
       category: "both",
@@ -57,7 +57,7 @@ const Feedback = () => {
     {
       id: 7,
       name: "Bruno L.",
-      date: "June 28, 2023",
+      date: "28 de junho, 2023",
       rating: 5,
       comment: "Serviço de primeira qualidade. O suporte técnico respondeu todas as minhas dúvidas rapidamente e o produto funciona exatamente como anunciado.",
       category: "support",
@@ -65,7 +65,7 @@ const Feedback = () => {
     {
       id: 8,
       name: "Thiago M.",
-      date: "June 30, 2023",
+      date: "30 de junho, 2023",
       rating: 4,
       comment: "As funcionalidades do cheat externo são muito completas e fáceis de configurar. O bypass continua funcionando perfeitamente mesmo após as atualizações do jogo.",
       category: "both",
@@ -73,7 +73,7 @@ const Feedback = () => {
     {
       id: 9,
       name: "João V.",
-      date: "June 10, 2023",
+      date: "10 de junho, 2023",
       rating: 5,
       comment: "Melhor investimento que fiz para jogos. O bypass é realmente indetectável e o cheat externo tem recursos que nem imaginava que existiam.",
       category: "both",
@@ -90,9 +90,9 @@ const Feedback = () => {
       <section className="pt-40 pb-16">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="heading-xl mb-6 animate-fade-down">Customer Feedback</h1>
+            <h1 className="heading-xl mb-6 animate-fade-down">Feedback dos Clientes</h1>
             <p className="text-muted-foreground text-lg mb-8 animate-fade-down" style={{ animationDelay: "100ms" }}>
-              See what our customers are saying about SneaKSolutions bypass and external cheat.
+              Veja o que nossos clientes estão dizendo sobre o bypass e cheat externo do SneaKSolutions.
             </p>
           </div>
         </div>
@@ -110,7 +110,7 @@ const Feedback = () => {
                   : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
               }`}
             >
-              All Feedback
+              Todos os Feedbacks
             </button>
             <button 
               onClick={() => setFilter("bypass")}
@@ -130,7 +130,7 @@ const Feedback = () => {
                   : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
               }`}
             >
-              External Cheat
+              Cheat Externo
             </button>
             <button 
               onClick={() => setFilter("both")}
@@ -140,7 +140,7 @@ const Feedback = () => {
                   : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
               }`}
             >
-              Both
+              Ambos
             </button>
             <button 
               onClick={() => setFilter("support")}
@@ -150,7 +150,7 @@ const Feedback = () => {
                   : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
               }`}
             >
-              Support
+              Suporte
             </button>
           </div>
 
@@ -168,7 +168,7 @@ const Feedback = () => {
 
           {filteredFeedbacks.length === 0 && (
             <div className="text-center py-12">
-              <p className="text-muted-foreground">No feedback found for this category.</p>
+              <p className="text-muted-foreground">Nenhum feedback encontrado para esta categoria.</p>
             </div>
           )}
         </div>
@@ -178,28 +178,28 @@ const Feedback = () => {
       <section className="py-16 bg-secondary">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="heading-lg mb-4">Customer Satisfaction</h2>
+            <h2 className="heading-lg mb-4">Satisfação do Cliente</h2>
             <p className="text-muted-foreground">
-              Our customers love our products, and the numbers speak for themselves.
+              Nossos clientes amam nossos produtos, e os números falam por si.
             </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-4xl font-bold mb-2">98%</div>
-              <p className="text-sm text-muted-foreground">Customer Satisfaction</p>
+              <p className="text-sm text-muted-foreground">Satisfação do Cliente</p>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold mb-2">0%</div>
-              <p className="text-sm text-muted-foreground">Detection Rate</p>
+              <p className="text-sm text-muted-foreground">Taxa de Detecção</p>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold mb-2">1000+</div>
-              <p className="text-sm text-muted-foreground">Active Users</p>
+              <p className="text-sm text-muted-foreground">Usuários Ativos</p>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold mb-2">24/7</div>
-              <p className="text-sm text-muted-foreground">Customer Support</p>
+              <p className="text-sm text-muted-foreground">Suporte ao Cliente</p>
             </div>
           </div>
         </div>
@@ -210,9 +210,9 @@ const Feedback = () => {
         <div className="container">
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="heading-md mb-4">Share Your Experience</h2>
+              <h2 className="heading-md mb-4">Compartilhe Sua Experiência</h2>
               <p className="text-muted-foreground">
-                We value your feedback. Let us know about your experience with our products.
+                Valorizamos seu feedback. Conte-nos sobre sua experiência com nossos produtos.
               </p>
             </div>
 
@@ -220,13 +220,13 @@ const Feedback = () => {
               <form className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2">
-                    Name
+                    Nome
                   </label>
                   <input
                     type="text"
                     id="name"
                     className="w-full px-4 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:border-input bg-background"
-                    placeholder="Your name"
+                    placeholder="Seu nome"
                   />
                 </div>
                 <div>
@@ -237,40 +237,40 @@ const Feedback = () => {
                     type="email"
                     id="email"
                     className="w-full px-4 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:border-input bg-background"
-                    placeholder="Your email"
+                    placeholder="Seu email"
                   />
                 </div>
                 <div>
                   <label htmlFor="rating" className="block text-sm font-medium mb-2">
-                    Rating
+                    Avaliação
                   </label>
                   <select
                     id="rating"
                     className="w-full px-4 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:border-input bg-background"
                   >
-                    <option value="5">5 Stars</option>
-                    <option value="4">4 Stars</option>
-                    <option value="3">3 Stars</option>
-                    <option value="2">2 Stars</option>
-                    <option value="1">1 Star</option>
+                    <option value="5">5 Estrelas</option>
+                    <option value="4">4 Estrelas</option>
+                    <option value="3">3 Estrelas</option>
+                    <option value="2">2 Estrelas</option>
+                    <option value="1">1 Estrela</option>
                   </select>
                 </div>
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium mb-2">
-                    Your Feedback
+                    Seu Feedback
                   </label>
                   <textarea
                     id="message"
                     rows={5}
                     className="w-full px-4 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:border-input bg-background resize-none"
-                    placeholder="Share your experience with our products..."
+                    placeholder="Compartilhe sua experiência com nossos produtos..."
                   ></textarea>
                 </div>
                 <button
                   type="submit"
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-md font-medium transition-colors focus-ring"
                 >
-                  Submit Feedback
+                  Enviar Feedback
                 </button>
               </form>
             </div>

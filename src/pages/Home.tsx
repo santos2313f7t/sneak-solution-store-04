@@ -11,26 +11,26 @@ const Home = () => {
         <div className="container mx-auto">
           <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
             <div className="px-4 py-1 bg-secondary rounded-full mb-6 animate-fade-down">
-              <span className="text-xs font-medium text-foreground">100% Undetectable Solution</span>
+              <span className="text-xs font-medium text-foreground">Solução 100% Indetectável</span>
             </div>
             <h1 className="heading-xl mb-6 animate-fade-down" style={{ animationDelay: "100ms" }}>
-              Unparalleled Bypass Technology with External Cheat
+              Tecnologia de Bypass Incomparável com Cheat Externo
             </h1>
             <p className="text-muted-foreground text-lg mb-8 max-w-2xl animate-fade-down" style={{ animationDelay: "200ms" }}>
-              Experience gaming freedom with our premium undetectable bypass solution, paired with robust external cheat features for unmatched performance.
+              Experimente a liberdade nos jogos com nossa solução premium de bypass indetectável, combinada com recursos robustos de cheat externo para desempenho imbatível.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: "300ms" }}>
               <Link 
                 to="/pricing" 
                 className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-md font-medium transition-colors focus-ring"
               >
-                View Pricing
+                Ver Preços
               </Link>
               <Link 
                 to="/features" 
                 className="bg-secondary hover:bg-secondary/80 text-secondary-foreground px-6 py-3 rounded-md font-medium transition-colors flex items-center justify-center focus-ring"
               >
-                Learn More 
+                Saiba Mais 
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </div>
@@ -48,32 +48,32 @@ const Home = () => {
       <section className="py-20">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="heading-lg mb-4">State-of-the-Art Technology</h2>
+            <h2 className="heading-lg mb-4">Tecnologia de Ponta</h2>
             <p className="text-muted-foreground">
-              Our solution combines advanced bypass techniques with powerful external cheats to deliver an exceptional gaming experience.
+              Nossa solução combina técnicas avançadas de bypass com cheats externos poderosos para proporcionar uma experiência de jogo excepcional.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <FeatureCard 
               icon={Shield}
-              title="Undetectable Bypass"
-              description="Our proprietary bypass technology remains completely invisible to all anti-cheat systems."
+              title="Bypass Indetectável"
+              description="Nossa tecnologia proprietária de bypass permanece completamente invisível para todos os sistemas anti-cheat."
             />
             <FeatureCard 
               icon={Zap}
-              title="Performance Optimized"
-              description="Engineered for minimal system impact, maintaining your game's performance while active."
+              title="Desempenho Otimizado"
+              description="Projetado para impacto mínimo no sistema, mantendo o desempenho do seu jogo enquanto ativo."
             />
             <FeatureCard 
               icon={Eye}
-              title="External Cheat Integration"
-              description="Powerful external cheat features included with all plans for enhanced gameplay."
+              title="Integração de Cheat Externo"
+              description="Recursos poderosos de cheat externo incluídos em todos os planos para gameplay aprimorado."
             />
             <FeatureCard 
               icon={Lock}
-              title="Secure Updates"
-              description="Regular updates delivered securely to maintain undetectability and add new features."
+              title="Atualizações Seguras"
+              description="Atualizações regulares entregues com segurança para manter a indetectabilidade e adicionar novos recursos."
             />
           </div>
         </div>
@@ -84,36 +84,36 @@ const Home = () => {
         <div className="container">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="max-w-xl">
-              <h2 className="heading-lg mb-4">Ready to Transform Your Gaming Experience?</h2>
+              <h2 className="heading-lg mb-4">Pronto para Transformar Sua Experiência de Jogo?</h2>
               <p className="text-muted-foreground mb-8">
-                Join thousands of satisfied users already experiencing our premium bypass solution with external cheat features.
+                Junte-se a milhares de usuários satisfeitos que já estão experimentando nossa solução premium de bypass com recursos de cheat externo.
               </p>
               <Link 
                 to="/pricing" 
                 className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-md font-medium inline-flex items-center transition-colors focus-ring"
               >
-                Get Started
+                Começar Agora
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </div>
             <div className="p-8 bg-card rounded-xl border border-border max-w-sm w-full">
-              <h3 className="font-semibold mb-4">Key Benefits</h3>
+              <h3 className="font-semibold mb-4">Principais Benefícios</h3>
               <ul className="space-y-3">
                 <li className="flex items-center gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
-                  <span className="text-sm">100% undetectable to all anti-cheat systems</span>
+                  <span className="text-sm">100% indetectável para todos os sistemas anti-cheat</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
-                  <span className="text-sm">Powerful external cheat features included</span>
+                  <span className="text-sm">Recursos poderosos de cheat externo incluídos</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
-                  <span className="text-sm">Regular updates and new features</span>
+                  <span className="text-sm">Atualizações regulares e novos recursos</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
-                  <span className="text-sm">Premium 24/7 customer support</span>
+                  <span className="text-sm">Suporte premium ao cliente 24/7</span>
                 </li>
               </ul>
             </div>
